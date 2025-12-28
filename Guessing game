@@ -24,11 +24,11 @@ class GuessingGame:
             json.dump(self.high_scores, file, indent=4)
 
     def welcome(self):
-        print("\n🎯 SUPER ADVANCED NUMBER GUESSING GAME 🎯")
+        print("\n GUESSING GAME ")
         self.player_name = input("Enter your name: ").strip().title()
 
     def choose_level(self):
-        print("\nChoose Difficulty:")
+        print("\nChoose Difficulty:"
         print("1. Easy (1–10 | 5 attempts)")
         print("2. Medium (1–50 | 7 attempts)")
         print("3. Hard (1–100 | 8 attempts)")
