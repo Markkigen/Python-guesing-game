@@ -82,7 +82,7 @@ class GuessingGame:
             if guess == secret:
                 time_taken = int(time.time() - start_time)
                 score = self.calculate_score(attempts - attempt + 1, time_taken)
-                print(f"\n🎉 Correct in {attempt} tries!")
+                print(f"\n Correct in {attempt} tries!")
                 print(f"⏱ Time: {time_taken}s")
                 print(f"🏆 Score earned: {score}")
                 return score
