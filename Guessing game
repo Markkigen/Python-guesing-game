@@ -58,7 +58,7 @@ class GuessingGame:
     def give_hint(self, secret, guess):
         difference = abs(secret - guess)
         if difference <= 3:
-            return "🔥 Very close!"
+            return " Very close!"
         elif difference <= 10:
             return "🌡 Close"
         else:
@@ -91,7 +91,7 @@ class GuessingGame:
             print(f"{'Too low' if guess < secret else 'Too high'} — {hint}")
             print(f"Attempts left: {attempts - attempt}")
 
-        print(f"\n❌ Game Over! Number was {secret}")
+        print(f"\n Game Over! Number was {secret}")
         return 0
 
     def update_high_score(self):
@@ -116,7 +116,7 @@ class GuessingGame:
                 break
 
         self.update_high_score()
-        print(f"\n🎯 Final Score: {self.total_score}")
+        print(f"\n Final Score: {self.total_score}")
         self.show_high_scores()
         print("Thanks for playing!")
 
